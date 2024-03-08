@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "0f09015a-2f0c-438f-9884-e562e591abaf",
+		"name": "mTLS Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mTLS Demo",
+			"id": "1952c017-0d79-4a59-97be-0af8067c393b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"strictSSL": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://127.0.0.1:8443/ssl-demo"
+			},
+			"response": [
+				{
+					"id": "5e64913f-0401-47fb-8abf-da1f1a219889",
+					"name": "Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8443/ssl-demo"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Bad Request\r\nThis combination of host and port requires TLS.\r\n"
+				}
+			]
+		}
+	]
+}
