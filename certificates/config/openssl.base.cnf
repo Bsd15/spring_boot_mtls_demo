@@ -1,0 +1,9 @@
+[ req_distinguished_name ]
+countryName                    = IN
+localityName                   = Vijayawada
+organizationalUnitName         = BSD
+commonName                     = localhost
+emailAddress                   = test@mail.com
+
+[ req_attributes ]
+challengePassword              =

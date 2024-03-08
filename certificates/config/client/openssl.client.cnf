@@ -1,0 +1,21 @@
+.include = config/openssl.base.cnf
+
+[ req ]
+input_password          = $ENV::password
+output_password         = $ENV::password
+default_bits            = 4096
+default_md              = SHA256
+distinguished_name      = req_distinguished_name
+prompt                  = no
+
+[ server_extensions ]
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth, clientAuth
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 192.168.12.100
+IP.2 = 127.0.0.1
+DNS.1 = bsd.com
