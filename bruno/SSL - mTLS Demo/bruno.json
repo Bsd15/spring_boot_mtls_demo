@@ -1,0 +1,20 @@
+{
+  "version": "1",
+  "name": "SSL - mTLS Demo",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "clientCertificates": {
+    "enabled": true,
+    "certs": [
+      {
+        "domain": "localhost:8443",
+        "certFilePath": "/Users/sivab/Code/ssl-demo/certificates/generated/client/client.crt",
+        "keyFilePath": "/Users/sivab/Code/ssl-demo/certificates/generated/client/client.key",
+        "passphrase": "changeit"
+      }
+    ]
+  }
+}
