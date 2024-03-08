@@ -74,3 +74,5 @@ hs_err_pid*
 replay_pid*
 
 /certificates/generated/
+/src/main/resources/keystore.p12
+/src/main/resources/truststore.p12
